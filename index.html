@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 8: Responsive Web Design</title>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
+<style>
+/* Created by Matt Spong 2025-03-14*/
+  
+  #headline {
+    position: relative;
+    background-image: url('Blob.jpg'); /* Set the image as a background */
+    background-size: cover; /* Ensure the image covers the div */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em; /* Adds space inside the div so text doesn't touch edges */
+    text-align: center;
+    
+
+    
+}
+
+  
+body {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    background-color: white;
+}
+
+ul a {
+    color: magenta;
+}
+
+h1, h2, ul, img {
+    margin-left: 0;
+}
+
+img {
+    margin-top: 20px;
+    display: block;
+}
+
+p, #subhead {
+    opacity: .9;
+    font-weight: lighter;
+      text-align: center;
+
+}
+
+    display: block;
+
+p {
+    padding: 1em 1em 1em 20px;
+}
+
+
+  h1, li, h2 {
+    font-family: "Georgia", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    padding: .375em;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: .375em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+  
+
+@media (max-width: 600px) {
+    body {
+        background-color: yellow;
+        font-size: 0.75em; 
+    }
+
+    img, p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    img {
+        width: 800px;
+    }
+
+    p {
+        width: 600px;
+    }
+}
+</style>
+</head>
+<body>
+  
+<div id="headline"><h1>About Me</h1></div>
+  
+  <p>“Expression is my goal in art. Without that, the humanity is lost”</p>
+
+
+<h2>Table of Contents:</h2>
+<ul>
+    <li><a href="#One">One</a></li>
+    <li><a href="#Two">Two</a></li>
+    <li><a href="#Three">Three</a></li>
+    <li><a href="#Four">Four</a></li>
+</ul>
+<h2><a name="One">One</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<h2><a name="Two">Two</a></h2>
+<p>Integer in elit ut odio vestibulum sagittis...</p>
+<h2><a name="Three">Three</a></h2>
+
+<p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa...</p>
+<h2><a name="Four">Four</a></h2>
+        <img src="Cooby.1.png" alt="Additional Image">
+
+<p>Morbi vestibulum massa vitae tortor vehicula rhoncus...</p>
+</body>
+</html>
