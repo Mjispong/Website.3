@@ -3,126 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercise 8: Responsive Web Design</title>
-<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
+<title>30 Minute Faces - Welcome</title>
+<link href="https://fonts.googleapis.com/css?family=Georgia|Roboto" rel="stylesheet"> 
 <style>
-/* Created by Matt Spong 2025-03-14*/
-  
-  #headline {
-    position: relative;
-    background-image: url('Blob.jpg'); /* Set the image as a background */
-    background-size: cover; /* Ensure the image covers the div */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2em; /* Adds space inside the div so text doesn't touch edges */
-    text-align: center;
-    
-
-    
-}
-
+/* Welcome Page - Based on design from image */
   
 body {
-    font-family: "Pacifico", cursive;
-    font-size: 30px;
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
     background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-ul a {
-    color: magenta;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1, h2, ul, img {
-    margin-left: 0;
+/* Welcome section with large text */
+.welcome-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 600px;
 }
 
-img {
+.welcome-text {
+    font-size: 7rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    line-height: 0.9;
+    position: relative;
+}
+
+.w-letter {
+    font-size: 10rem;
+    display: block;
+    margin-bottom: -30px;
+}
+
+.elcome {
+    display: block;
+    margin-top: -20px;
+}
+
+.eye-image {
+    width: 100px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Navigation menu */
+.nav-menu {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.nav-item {
+    background-color: #e0e0e0;
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item:hover {
+    background-color: #d0d0d0;
+}
+
+.divider {
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #e0e0e0;
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
     margin-top: 20px;
-    display: block;
 }
 
-p, #subhead {
-    opacity: .9;
-    font-weight: lighter;
-      text-align: center;
-
-}
-
-    display: block;
-
-p {
-    padding: 1em 1em 1em 20px;
-}
-
-
-  h1, li, h2 {
-    font-family: "Georgia", sans-serif;
-}
-
-h1 {
-    font-size: 2em;
-    color: white;
-    padding: .375em;
-}
-
-h2 {
-    font-size: 1.5em;
-    background-color: black;
-    color: white;
-    display: inline-block;
-    padding: .375em;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-  
-
+/* Responsive design */
 @media (max-width: 600px) {
-    body {
-        background-color: yellow;
-        font-size: 0.75em; 
+    .welcome-text {
+        font-size: 4rem;
     }
-
-    img, p {
-        width: 100%;
+    
+    .w-letter {
+        font-size: 6rem;
+        margin-bottom: -15px;
     }
-}
-
-@media (min-width: 601px) {
-    img {
-        width: 800px;
+    
+    .eye-image {
+        width: 80px;
     }
-
-    p {
-        width: 600px;
+    
+    .nav-item, .footer {
+        width: 90%;
     }
 }
 </style>
 </head>
 <body>
-  
-<div id="headline"><h1>About Me</h1></div>
-  
-  <p>“Expression is my goal in art. Without that, the humanity is lost”</p>
+<div class="container">
+    <!-- Welcome section -->
+    <div class="welcome-header">
+        <h1 class="welcome-text">
+            <span class="w-letter">W</span>
+            <span class="elcome">elcome</span>
+        </h1>
+        <!-- Replace with your eye image -->
+        <img src="https://via.placeholder.com/100x100" alt="Artistic eye illustration" class="eye-image">
+    </div>
 
-
-<h2>Table of Contents:</h2>
-<ul>
-    <li><a href="#One">One</a></li>
-    <li><a href="#Two">Two</a></li>
-    <li><a href="#Three">Three</a></li>
-    <li><a href="#Four">Four</a></li>
-</ul>
-<h2><a name="One">One</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-<h2><a name="Two">Two</a></h2>
-<p>Integer in elit ut odio vestibulum sagittis...</p>
-<h2><a name="Three">Three</a></h2>
-
-<p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa...</p>
-<h2><a name="Four">Four</a></h2>
-        <img src="Cooby.1.png" alt="Additional Image">
-
-<p>Morbi vestibulum massa vitae tortor vehicula rhoncus...</p>
+    <!-- Navigation menu -->
+    <div class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="gallery.html" class="nav-item">The Gallery</a>
+        <a href="about.html" class="nav-item">About Me</a>
+        <a href="contact.html" class="nav-item">Contact Me</a>
+        
+      
+        
+        <!-- Footer for contact info -->
+        <div class="footer">Contact info -Help - Etc.</div>
+    </div>
+</div>
 </body>
 </html>
